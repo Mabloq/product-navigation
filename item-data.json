@@ -1,0 +1,415 @@
+{
+    "11": {
+        "name": "Indoor",
+        "sub-products": {
+            "1500": {
+                "name": "Panels and Troffers",
+                "seo": "panels-and-troffers",
+                "image": "panels-main-Panels_Category.jpg",
+                "products": {
+                    "1501": {
+                        "name": "FlatMAX Edge Lit Flat Panels",
+                        "seo": "flatmax-edge-lit-flat-panels",
+                        "image": "flatmax-r-edge-lit-flat-panels-main-FlatMax_Category.jpg",
+                        "filters": "DEF-D",
+                        "options": "IDRBBM",
+                        "skus": {}
+                    },
+                    "4389": {
+                        "name": "ECO-T Recessed Troffer",
+                        "seo": "eco-t-recessed-troffer",
+                        "image": "eco-t-led-recessed-troffer-main-EcoT_PanelsSubCategory.jpg",
+                        "filters": "DEF",
+                        "options": 0,
+                        "skus": {}
+                    },
+                    "4415": {
+                        "name": "ArcMAX Volumetric Panels",
+                        "seo": "arcmax-volumetric-panels",
+                        "image": "arcmax-volumetric-panels-main-ArcMax_Category.jpg",
+                        "filters": "DEF",
+                        "options": "IDRBBM",
+                        "skus": {}
+                    },
+                    "4490": {
+                        "name": "Lensed Retrofit Kit",
+                        "seo": "lensed-retrofit-kit",
+                        "image": "led-lensed-retrofit-kit-main-LRK_RetrofitsSubCategory.jpg",
+                        "filters": "DEF",
+                        "options": "IDR-BB",
+                        "skus": {}
+                    },
+                    "4613": {
+                        "name": "Troffer Retrofit Kits",
+                        "seo": "troffer-retrofit-kits",
+                        "image": "troffer-retrofit-kits-main-TRK_RetrofitSubCategory.jpg",
+                        "filters": "DEF",
+                        "options": 0,
+                        "skus": {}
+                    },
+                    "4618": {
+                        "name": "Indirect Troffer",
+                        "seo": "indirect-troffer",
+                        "image": "indirect-troffer-main-IndirectTrofferCategory.jpg",
+                        "filters": "DEF",
+                        "options": "IDRBBM",
+                        "skus": {}
+                    },
+                    "4676": {
+                        "name": "FlatMAX Edge Lit Flat Panels - Color Selectable",
+                        "seo": "flatmax-edge-lit-flat-panels-color-selectable",
+                        "image": "flatmax-edge-lit-flat-panels-color-selectable-main-FlatMaxCS_Category.jpg",
+                        "filters": "DEF-D",
+                        "options": 0,
+                        "skus": {}
+                    }
+                }
+            },
+            "4404": {
+                "name": "Downlights",
+                "seo": "downlights",
+                "image": "downlights-list-DownlightsCategory.jpg",
+                "products": {
+                    "4311": {
+                        "name": "Residential Downlight Retrofits",
+                        "seo": "residential-downlight-retrofits",
+                        "image": "residential-downlight-retrofits-main-ResRetro_DownLightsSubCategory.jpg",
+                        "filters": "DEF-D",
+                        "options": 0,
+                        "skus": {}
+                    },
+                    "4504": {
+                        "name": "ECO Series-Commercial Recessed Retrofit Downlight",
+                        "seo": "eco-series-commercial-recessed-retrofit-downlight",
+                        "image": "eco-series-commercial-recessed-retrofit-downlight-main-RRECO.downlight_category.jpg",
+                        "filters": "DEF-D",
+                        "options": 0,
+                        "skus": {}
+                    },
+                    "4561": {
+                        "name": "J-Box Downlights",
+                        "seo": "j-box-downlights",
+                        "image": "j-box-downlights-main-JBox_DownLightsSubCategory.jpg",
+                        "filters": "DEF-D",
+                        "options": 0,
+                        "skus": {}
+                    },
+                    "4589": {
+                        "name": "Universal Commercial Downlight Fixtures",
+                        "seo": "universal-commercial-downlight-fixtures",
+                        "image": "universal-commercial-downlight-fixture-main-UnivDown_DownLightsSubCategory.jpg",
+                        "filters": "DEF-D",
+                        "options": 0,
+                        "skus": {}
+                    },
+                    "4614": {
+                        "name": "RRC Series Commercial Downlights",
+                        "seo": "rrc-series-commercial-downlights",
+                        "image": "rrc-series-commercial-downlights-main-RRC_DownLightsSubCategory.jpg",
+                        "filters": "DEF",
+                        "options": "IDR-BB",
+                        "skus": {}
+                    },
+                    "4646": {
+                        "name": "Universal Commerical Downlights - Color Selectable",
+                        "seo": "universal-commerical-downlights-color-selectable",
+                        "image": "universal-commerical-downlights-color-selectable-main-SelectableDownlight_Category.jpg",
+                        "filters": "DEF",
+                        "options": 0,
+                        "skus": {}
+                    },
+                    "4655": {
+                        "name": "Disc Lights - Faux Cans",
+                        "seo": "disc-lights-faux-cans",
+                        "image": "disc-light-main-DiscLightCategory.jpg",
+                        "filters": "DEF",
+                        "options": 0,
+                        "skus": {}
+                    },
+                    "4670": {
+                        "name": "Slim Downlight - Color Selectable",
+                        "seo": "slim-downlight-color-selectable",
+                        "image": "slim-downlight-color-selectable-main-SlimDownlight.Category.jpg",
+                        "filters": "DEF",
+                        "options": 0,
+                        "skus": {}
+                    }
+                }
+            },
+            "4407": {
+                "name": "Retrofit Kits",
+                "seo": "retrofit-kits",
+                "image": "led-retrofit-kits-main-LRK_RetrofitsSubCategory.jpg",
+                "products": {
+                    "4405": {
+                        "name": "Recessed Troffer Retrofit Kits",
+                        "seo": "recessed-troffer-retrofit-kits",
+                        "image": "led-recessed-troffer-retrofit-kits-main-RKT_RetrofitsSubCategory.jpg",
+                        "filters": "DEF",
+                        "options": "IDR-O",
+                        "skus": {}
+                    },
+                    "4513": {
+                        "name": "Flush Mount Retrofit",
+                        "seo": "flush-mount-retrofit",
+                        "image": "flush-mount-retrofit-main-FRK_Category.jpg",
+                        "filters": "DEF-D",
+                        "options": 0,
+                        "skus": {}
+                    },
+                    "4610": {
+                        "name": "Lensed Retrofit Kits",
+                        "seo": "lensed-retrofit-kits",
+                        "image": "lensed-retrofit-kits-main-LRK_RetrofitsSubCategory.jpg",
+                        "filters": "DEF",
+                        "options": "IDR-BB",
+                        "skus": {}
+                    },
+                    "4611": {
+                        "name": "Troffer Retrofit Kit",
+                        "seo": "troffer-retrofit-kit",
+                        "image": "troffer-retrofit-kit-main-TRK_RetrofitSubCategory.jpg",
+                        "filters": "DEF",
+                        "options": 0,
+                        "skus": {}
+                    },
+                    "4682": {
+                        "name": "Flat Panel Retrofit Kit",
+                        "seo": "flat-panel-retrofit-kit",
+                        "image": "flat-panel-retrofit-kit-main-FlatPanelRetrofit.category.jpg",
+                        "filters": "DEF",
+                        "options": "IDRBBM",
+                        "skus": {}
+                    }
+                }
+            },
+            "4418": {
+                "name": "High Bays",
+                "seo": "high-bays",
+                "image": "high-bays-list-HighBayCategory.jpg",
+                "products": {
+                    "4398": {
+                        "name": "BayMAX Round Pendant High Bays - MLLHP Series",
+                        "seo": "baymax-round-pendant-high-bays-mllhp-series",
+                        "image": "baymax-led-round-pendant-high-bays-main-MLLHP_HighbaySubCategory.jpg",
+                        "filters": "DEF",
+                        "options": "IDRBBM",
+                        "skus": {}
+                    },
+                    "4482": {
+                        "name": "StaxMAX High Bay",
+                        "seo": "staxmax-high-bay",
+                        "image": "staxmax-led-high-bay-main-StaxMax_HighbaySubCategory.jpg",
+                        "filters": "QUA",
+                        "options": "MOPHO",
+                        "skus": {}
+                    },
+                    "4536": {
+                        "name": "High Bay Linear - HL Series",
+                        "seo": "high-bay-linear-hl-series",
+                        "image": "high-bay-linear-hl-series-main-HighBayCategory.jpg",
+                        "filters": "DEF",
+                        "options": "IDRBBM",
+                        "skus": {}
+                    },
+                    "4563": {
+                        "name": "Economical High Bay - BLHE Series",
+                        "seo": "economical-high-bay-blhe-series",
+                        "image": "economical-high-bay-main-Eco_HighbaySubCategory.jpg",
+                        "filters": "DEF",
+                        "options": "IDRBBM",
+                        "skus": {}
+                    },
+                    "4581": {
+                        "name": "High Bay Pendant - HP Series",
+                        "seo": "high-bay-pendant-hp-series",
+                        "image": "high-bay-pendant-hp-series-main-HPSeries_HighbaySubCategory.jpg",
+                        "filters": "DEF",
+                        "options": "IDRBBM",
+                        "skus": {}
+                    },
+                    "4659": {
+                        "name": "High Temperature High Bay - HPH Series",
+                        "seo": "high-temperature-high-bay-hph-series",
+                        "image": "high-temperature-high-bay-main-HPH.HighBay.Category.jpg",
+                        "filters": "DEF",
+                        "options": 0,
+                        "skus": {}
+                    },
+                    "4683": {
+                        "name": "Round ECO Pendant High Bay",
+                        "seo": "round-eco-pendant-high-bay",
+                        "image": "round-eco-pendant-high-bay-main-RoundHighBay2019.category.jpg",
+                        "filters": "DEF",
+                        "options": "IDR-MS",
+                        "skus": {}
+                    }
+                }
+            },
+            "4446": {
+                "name": "Linear Fixtures",
+                "seo": "linear-fixtures",
+                "image": "linear-fixtures-list-TriMax_LinearSubCategory.jpg",
+                "products": {
+                    "4421": {
+                        "name": "Utility Wrap Fixtures",
+                        "seo": "utility-wrap-fixtures",
+                        "image": "led-utility-wrap-fixtures-main-Utility_LinearSubCategory.jpg",
+                        "filters": "DEF",
+                        "options": "IDRBBM",
+                        "skus": {}
+                    },
+                    "4445": {
+                        "name": "Polygon Linear Fixture",
+                        "seo": "polygon-linear-fixture",
+                        "image": "polygon-linear-led-fixture-main-L-FormG1_LinearSubCategory.jpg",
+                        "filters": "DEF-D",
+                        "options": "IDRBBM",
+                        "skus": {}
+                    },
+                    "4464": {
+                        "name": "L-Form Linear Luminaire",
+                        "seo": "l-form-linear-luminaire",
+                        "image": "l-form-linear-luminaire-main-L-FormG2_LinearSubCategory.jpg",
+                        "filters": "DEF",
+                        "options": "IDR-BB",
+                        "skus": {}
+                    },
+                    "4516": {
+                        "name": "Shop Light",
+                        "seo": "shop-light",
+                        "image": "shop-light-main-ShopLight_LinearSubCategory.jpg",
+                        "filters": "DEF",
+                        "options": 0,
+                        "skus": {}
+                    },
+                    "4543": {
+                        "name": "TriMax Vapor Tight",
+                        "seo": "trimax-vapor-tight",
+                        "image": "trimax-vapor-tight-main-TriMax2_Category.jpg",
+                        "filters": "DEF",
+                        "options": "IDRBBM",
+                        "skus": {}
+                    },
+                    "4545": {
+                        "name": "LS Series LED Strip",
+                        "seo": "ls-series-led-strip",
+                        "image": "ls-series-led-strip-main-LSSeries_LinearSubCategory.jpg",
+                        "filters": "DEF",
+                        "options": "IDR-MS",
+                        "skus": {}
+                    },
+                    "4547": {
+                        "name": "RS Series LED Strip Retrofit Kit",
+                        "seo": "rs-series-led-strip-retrofit-kit",
+                        "image": "rs-series-led-strip-retrofit-kit-main-RSSeries_LinearSubCategory.jpg",
+                        "filters": "DEF",
+                        "options": "IDR-O",
+                        "skus": {}
+                    },
+                    "4612": {
+                        "name": "Vapor Tight Linear Fixture",
+                        "seo": "vapor-tight-linear-fixture",
+                        "image": "vapor-tight-linear-fixture-main-VaporTight_LinearSubCategory.jpg",
+                        "filters": "DEF",
+                        "options": "IDRBBM",
+                        "skus": {}
+                    },
+                    "4668": {
+                        "name": "L-MAX Linear Luminaire",
+                        "seo": "l-max-linear-luminaire",
+                        "image": "l-max-linear-luminaire-main-LMAX_Linear_Category.jpg",
+                        "filters": "DEF",
+                        "options": 0,
+                        "skus": {}
+                    }
+                }
+            },
+            "4523": {
+                "name": "Lightbars",
+                "seo": "lightbars",
+                "image": "lightbars-list-LiteBarsCategory.jpg",
+                "products": {
+                    "4320": {
+                        "name": "Plug-and-Play Lightbars",
+                        "seo": "plug-and-play-lightbars",
+                        "image": "plug-and-play-lightbars-main-PP_LightbarsSubCategory.jpg",
+                        "filters": "LBAR",
+                        "options": 0,
+                        "skus": {}
+                    },
+                    "4521": {
+                        "name": "Low Voltage Light Bars",
+                        "seo": "low-voltage-light-bars",
+                        "image": "low-voltage-light-bars-main-LV_LightbarsSubCategory.jpg",
+                        "filters": "DEF",
+                        "options": 0,
+                        "skus": {}
+                    },
+                    "4594": {
+                        "name": "LiteBars",
+                        "seo": "litebars",
+                        "image": "litebars--main-Litebars_SubLightbars.jpg",
+                        "filters": "LBAR",
+                        "options": 0,
+                        "skus": {}
+                    }
+                }
+            },
+            "4590": {
+                "name": "Pendants",
+                "seo": "pendants",
+                "image": "pendants-list-1x4_PendantSubCategory.jpg",
+                "products": {
+                    "4586": {
+                        "name": "Round Pendant",
+                        "seo": "round-pendant",
+                        "image": "round-pendant-main-Round_PendantSubCategory.jpg",
+                        "filters": "DEF",
+                        "options": "ODR-NO",
+                        "skus": {}
+                    },
+                    "4587": {
+                        "name": "Direct/Indirect Pendant",
+                        "seo": "directorindirect-pendant",
+                        "image": "directorindirect-linear-pendant-main-1x4_PendantSubCategory.jpg",
+                        "filters": "DEF",
+                        "options": 0,
+                        "skus": {}
+                    }
+                }
+            },
+            "4643": {
+                "name": "Exit and Emergency Lighting",
+                "seo": "exit-and-emergency-lighting",
+                "image": "exit-and-emergency-lighting-list-ExitSign_Category.jpg",
+                "products": {
+                    "4640": {
+                        "name": "Emergency Lights",
+                        "seo": "emergency-lights",
+                        "image": "emergency-lights-main-EmergencyFixture_Category.jpg",
+                        "filters": 0,
+                        "options": 0,
+                        "skus": {}
+                    },
+                    "4641": {
+                        "name": "Exit Signs",
+                        "seo": "exit-signs",
+                        "image": "exit-signs-main-ExitSign_Category.jpg",
+                        "filters": 0,
+                        "options": 0,
+                        "skus": {}
+                    },
+                    "4667": {
+                        "name": "GuardMAX Emergency Wall Packs",
+                        "seo": "guardmax-emergency-wall-packs",
+                        "image": "guardmax-emergency-wall-packs-main-GuardmaxEM.Category.jpg",
+                        "filters": "DEF",
+                        "options": 0,
+                        "skus": {}
+                    }
+                }
+            }
+        }
+    }
+}

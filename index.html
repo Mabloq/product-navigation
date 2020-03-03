@@ -1,0 +1,333 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/_assets/js/websvc.variables.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+
+    <style>
+        .popup {
+            max-height: 600px;
+            max-width: 80%;
+
+        }
+
+        .top-link {
+            margin: 0;
+        }
+
+        .top-link a {
+            padding: 5px 10px 5px 10px;
+            color: white;
+
+        }
+
+        .top-link a:hover {
+            color: #9c9c9c;
+        }
+    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Product Nav - MaxLite</title>
+    <!--<link rel="stylesheet" href="/_assets/css/add2home.css" />
+        <script type="application/javascript" src="/_assets/js/add2homeExt.js" charset="utf-8"></script>
+        <script type="application/javascript" src="/_assets/js/add2home.js" charset="utf-8"></script>
+        -->
+    <!--[if IE 9]><link rel="stylesheet" href="/_assets/css/ie9.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 8]><link rel="stylesheet" href="/_assets/css/ie8.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="/_assets/css/ie7.css" type="text/css" media="screen" /><![endif]-->
+
+    <!--<script type="text/javascript" src="/_assets/js/jquery.tmpl.min.js"></script>
+        <script type="text/javascript" src="/_assets/js/jquery.easing.js"></script>
+        <script type="text/javascript" src="/_assets/js/jquery.elastislide.js"></script>
+        <script type="text/javascript" src="/_assets/js/gallery.js"></script>-->
+    <!-- <script type="text/javascript" src="assets/js/functions.js"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.core.js"
+        integrity="sha256-tsIbwIT+4qFYQl3lJqYOZst6ot+JaR73T5eusuTukXM=" crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript" src="/_assets/js/websvc.variables.js"></script> -->
+    <!--<script type="text/javascript" src="/_assets/js/websvc.js"></script>-->
+    <script type="text/javascript" src="assets/js/outdoor.js"></script>
+    <script type="text/javascript" src="assets/js/product-filter.js"></script>
+    <link href="assets/product-filter.css" rel="stylesheet" type="text/css">
+    <link href="assets/nav.css" rel="stylesheet" type="text/css">
+
+
+    <!-- semantic-ui -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+        integrity="sha256-t8GepnyPmw9t+foMh3mKNvcorqNHamSKtKRxxpUEgFI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+        integrity="sha256-9mbkOfVho3ZPXfM7W8sV2SndrGDuh7wuyLjtsWeTI1Q=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/menu.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/dropdown.js"
+        integrity="sha256-F7bVEHQ4sRYd9sxTbsilBysfEuioM44CVXxnfPGQ4KE=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/dropdown.min.css"
+        integrity="sha256-eKk/OB1/M9wf6oWV2+jUV8DpHXBFjNthcjTRvgPb4jg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/popup.min.css"
+        integrity="sha256-mvPx/uQ9/nYt7gXIRxVFSR0TtpXw4CskAMXBUmYpDfQ=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/popup.js"
+        integrity="sha256-s2qsK8Pc2X9cKCpRTyq+onTYAK1j+nyA7tw8C4lVIFs=" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/array-flat-polyfill"></script>
+
+<body>
+    <div>
+        <div id="topNav" style="margin:0 0 !important">
+
+            <div class="top-link">
+                <a href="http://des.smartsites.com/Maxlite/171219/Reps-Dashboard-v01/">Rep-Resource MaxLite</a>
+                <a href="/Account/Logout?ReturnUrl=/products/mpulse-area-lights">Logout</a>
+                <a href="https://support.maxlite.com" target="_blank">Distributor Support</a>
+                <a href="http://des.smartsites.com/Maxlite/080120/Subpages/Employee-Testimonials/">Careers</a>
+                <a href="http://des.smartsites.com/Maxlite/090120/Distributor/">Become a Distributor</a>
+                <a href="http://des.smartsites.com/Maxlite/080120/Subpages/Datesheet-lib/">Data Sheet Library</a>
+                <a href="http://des.smartsites.com/Maxlite/080120/Subpages/Webinar/" class="last">Webinars</a>
+                <div style="display: inline-block;padding:5px;">
+                    <label style="margin-right:5px">Search</label>
+                    <input id="searchBox" type="text" onkeypress="return doSearch(event);" class="_text">
+                </div>
+            </div>
+
+        </div>
+
+        <div style="z-index:99;width:100%;margin:0;" class=" ui menu">
+            <a class="item" href="">
+                <img style="width:150px;padding:10px" src="assets/images/MaxLiteLogo.png" />
+            </a>
+            <div class="about ui dropdown item">
+                ABOUT
+                <i class="dropdown icon"></i>
+                <div class="menu hidden">
+                    <a class="item" href="http://des.smartsites.com/Maxlite/081119/About/">About / History</a>
+                    <a class="item" href="http://des.smartsites.com/Maxlite/131219/Mission/">Vision and Purpose</a>
+                    <a class="item" href="http://des.smartsites.com/Maxlite/131219/Our-Team/">Leadership</a>
+                    <a class="item" href="http://des.smartsites.com/Maxlite/131219/Patents/">Patents</a>
+                    <a class="item" href="http://des.smartsites.com/Maxlite/080120/Subpages/Career/">Careers</a>
+
+                    <a class="item" href="http://maxlite.com/directions-and-contacts">Directions and Contacts</a>
+                </div>
+            </div>
+            <a class="ui products item">
+                PRODUCTS
+                <i class="dropdown icon"></i>
+            </a>
+
+            <div class="about ui dropdown item">
+                APPLICATION
+                <i class="dropdown icon"></i>
+                <div class="menu hidden">
+                    <a class="item" href=" http://des.smartsites.com/Maxlite/121219/Applications/">School +
+                        University</a>
+
+                </div>
+            </div>
+
+
+            <div class="about ui dropdown item">
+                RESOURCES
+                <i class="dropdown icon"></i>
+                <div class="menu hidden">
+                    <a class="item" href="http://des.smartsites.com/Maxlite/171219/Print-Resources/">Print
+                        Resources</a>
+                    <a class="item" href="http://des.smartsites.com/Maxlite/060120/Subpages/In-The-Media/">In the
+                        Media</a>
+                    <a class="item" href="http://des.smartsites.com/Maxlite/090120/Videos/">Product Videos</a>
+                    <a class="item" href="http://des.smartsites.com/Maxlite/080120/Subpages/MaxLite-University/">MaxLite
+                        Lighting and Technology University</a>
+
+                </div>
+            </div>
+            <div class="about ui dropdown item">
+                WHERE TO BUY <i class="dropdown icon"></i>
+                <div class="menu hidden">
+                    <a class="item" href="http://des.smartsites.com/Maxlite/131219/Utility-Rebate-Programs-v01/">Rebate
+                        Finder</a>
+                    <a class="item" href="http://des.smartsites.com/Maxlite/131219/Reps-Page/">MaxLite Reps
+                    </a>
+
+                    <a class="item" href="http://des.smartsites.com/Maxlite/131219/Dealer-Locator-v02/">Dealer
+                        Locator</a>
+
+                </div>
+            </div>
+            <div class="about ui dropdown item">
+                REBATES + COMPLIANCE <i class="dropdown icon"></i>
+                <div class="menu hidden">
+                    <a class="item" href="http://des.smartsites.com/Maxlite/131219/Utility-Rebate-Programs-v01/">Rebate
+                        Finder</a>
+                    <a class="item" href="http://des.smartsites.com/Maxlite/131219/DLC-v01/">DLC, T20, JA8 + Energry
+                        Start Products
+                    </a>
+
+                    <a class="item" href="http://des.smartsites.com/Maxlite/060120/Subpages/Warranties/">Warranties</a>
+
+                </div>
+            </div>
+            <div class="about ui dropdown item">
+                CUSTOMER SUPPORT
+                <i class="dropdown icon"></i>
+                <div class="menu hidden">
+                    <a class="item" href="http://des.smartsites.com/Maxlite/080120/Subpages/Customer-Support/">Customer
+                        Support</a>
+                    <a class="item" href="http://des.smartsites.com/Maxlite/080120/Subpages/Contact/">Contact Us
+                    </a>
+
+                    <a class="item" href="http://des.smartsites.com/Maxlite/060120/Subpages/Warranties/">Warranties</a>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="about-nav" class="ui fluid popup transition hidden">
+
+        </div>
+        <div id="products-nav" style="width:980px" class="ui flowing basic popup transition hidden">
+            <div class="ui four column relaxed equal height divided grid">
+                <div class="column">
+                    <h3 style="color:#009639" class="ui header">Outdoor</h4>
+                        <div class="ui link list">
+                            <a href="https://www.maxlite.com/resources/product-filter/" class="item">MPulse
+                                Architectural Outdoor Fixtures</a>
+                            <a href="https://www.maxlite.com/resources/product-filter/" class="item">QuadroMAX Plus
+                                Modular Lighting Fixtures</a>
+                            <a href="https://www.maxlite.com/resources/product-filter/" class="item">Area
+                                Luminaires</a>
+                            <a href="https://www.maxlite.com/resources/product-filter/" class="item">Flood
+                                Luminaires</a>
+                            <a href="https://www.maxlite.com/resources/product-filter/" class="item">Wall
+                                Luminaires</a>
+                            <a href="https://www.maxlite.com/resources/product-filter/" class="item">Canopy and Parking
+                                Garage Luminaires</a>
+                            <a href="https://www.maxlite.com/resources/product-filter/" class="item"
+                                style="text-decoration:underline;color:#009639">more..</a>
+                        </div>
+                </div>
+                <div class="column">
+                    <h3 style="color:#009639" class="ui header">Indoor</h4>
+                        <div class="ui link list">
+                            <a href="https://www.maxlite.com/products/panels-and-troffers/list" class="item">Panels
+                                and
+                                Troffers</a>
+                            <a href="https://www.maxlite.com/products/retrofit-kits/list" class="item">Retrofit
+                                Kits</a>
+                            <a href="https://www.maxlite.com/products/high-bays/list" class="item">High Bays</a>
+                            <a href="https://www.maxlite.com/products/downlights/list" class="item">Downlights</a>
+                            <a href="https://www.maxlite.com/products/linear-fixtures/list" class="item">Linear
+                                Fixtures</a>
+                            <a href="https://www.maxlite.com/products/lightbars/list" class="item">Lightbars</a>
+                            <a href="https://www.maxlite.com/products/indoor/type" class="item"
+                                style="text-decoration:underline;color:#009639">more..</a>
+                        </div>
+                </div>
+                <div class="column">
+                    <h4 style="color:#009639" class="ui header">Lamps</h4>
+                    <div class="ui link list">
+                        <a class="item">Neutrals</a>
+                        <a class="item">Brights</a>
+                        <a class="item">Pastels</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <h4 style="color:#009639" class="ui header">Residential</h4>
+                    <div class="ui link list">
+                        <a class="item">Knitwear</a>
+                        <a class="item">Outerwear</a>
+                        <a class="item">Pants</a>
+                        <a class="item">Shoes</a>
+                    </div>
+                </div>
+            </div>
+            <!-- row 2 -->
+            <div class="ui four column relaxed equal height divided grid">
+                <div class="column">
+                    <h4 style="color:#009639" class="ui header">Harsh and Hazardous</h4>
+                    <div class="ui link list">
+                        <a class="item">Cashmere</a>
+                        <a class="item">Linen</a>
+                        <a class="item">Cotton</a>
+                        <a class="item">Viscose</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <h4 class="ui header">Horticulture</h4>
+                    <div class="ui link list">
+                        <a class="item">Small</a>
+                        <a class="item">Medium</a>
+                        <a class="item">Large</a>
+                        <a class="item">Plus Sizes</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <h4 style="color:#009639" class="ui header">Light Engines and Retrofit Kits</h4>
+                    <div class="ui link list">
+                        <a class="item">Neutrals</a>
+                        <a class="item">Brights</a>
+                        <a class="item">Pastels</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <h4 style="color:#009639" class="ui header">Signage</h4>
+                    <div class="ui link list">
+                        <a class="item">Knitwear</a>
+                        <a class="item">Outerwear</a>
+                        <a class="item">Pants</a>
+                        <a class="item">Shoes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="width: 980px;margin:0 auto;">
+            <h1 style="margin-top:35px;">Outdoor Products > Area Luminaries</h1>
+            <hr>
+            <div id="product-pages">
+
+            </div>
+            <div id="filter-container"
+                style="display:inline-block;vertical-align: top;padding:30px 0 30px 0;width: 200px">
+
+
+            </div>
+            <div id="products-container" style="display:inline-block;vertical-align: top;padding:30px;width:680px">
+
+            </div>
+            <div id="paginator">
+
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var Filter = new ProductFilter(4434)
+        Filter.init()
+
+        $('.ui.dropdown').dropdown();
+
+        $('.products').popup({
+            popup: $('#products-nav'),
+
+            lastResort: 'bottom left',
+            hoverable: true,
+
+            position: 'bottom left',
+            delay: {
+                show: 200,
+                hide: 100
+            }
+        });
+
+
+
+        // $('.menu .products-drop').dropdown();
+
+        $('.about').dropdown({
+            on: 'hover'
+        });
+    </script>
+    <script>
+        prods = JSON.parse(main_json)
+        console.log('prod: ', prods)
+    </script>
+</body>
+
+</html>

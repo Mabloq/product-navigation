@@ -1,0 +1,290 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/_assets/js/websvc.variables.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="assets/main-proddata.js"></script>
+    <style>
+        .popup {
+            max-height: 600px;
+            max-width: 80%;
+
+        }
+
+        .top-link {
+            margin: 0;
+        }
+
+        .top-link a {
+            padding: 5px 10px 5px 10px;
+            color: white;
+
+        }
+
+        .top-link a:hover {
+            color: #9c9c9c;
+        }
+    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Product Nav - MaxLite</title>
+    <!--<link rel="stylesheet" href="/_assets/css/add2home.css" />
+        <script type="application/javascript" src="/_assets/js/add2homeExt.js" charset="utf-8"></script>
+        <script type="application/javascript" src="/_assets/js/add2home.js" charset="utf-8"></script>
+        -->
+    <!--[if IE 9]><link rel="stylesheet" href="/_assets/css/ie9.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 8]><link rel="stylesheet" href="/_assets/css/ie8.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="/_assets/css/ie7.css" type="text/css" media="screen" /><![endif]-->
+
+    <!--<script type="text/javascript" src="/_assets/js/jquery.tmpl.min.js"></script>
+        <script type="text/javascript" src="/_assets/js/jquery.easing.js"></script>
+        <script type="text/javascript" src="/_assets/js/jquery.elastislide.js"></script>
+        <script type="text/javascript" src="/_assets/js/gallery.js"></script>-->
+    <!-- <script type="text/javascript" src="assets/js/functions.js"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.core.js"
+        integrity="sha256-tsIbwIT+4qFYQl3lJqYOZst6ot+JaR73T5eusuTukXM=" crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript" src="/_assets/js/websvc.variables.js"></script> -->
+    <!--<script type="text/javascript" src="/_assets/js/websvc.js"></script>-->
+
+    <script type="text/javascript" src="assets/js/main-filter.js"></script>
+    <link href="assets/product-filter.css" rel="stylesheet" type="text/css">
+    <link href="assets/nav.css" rel="stylesheet" type="text/css">
+
+
+    <!-- semantic-ui -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+        integrity="sha256-t8GepnyPmw9t+foMh3mKNvcorqNHamSKtKRxxpUEgFI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+        integrity="sha256-9mbkOfVho3ZPXfM7W8sV2SndrGDuh7wuyLjtsWeTI1Q=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/menu.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/dropdown.js"
+        integrity="sha256-F7bVEHQ4sRYd9sxTbsilBysfEuioM44CVXxnfPGQ4KE=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/dropdown.min.css"
+        integrity="sha256-eKk/OB1/M9wf6oWV2+jUV8DpHXBFjNthcjTRvgPb4jg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/popup.min.css"
+        integrity="sha256-mvPx/uQ9/nYt7gXIRxVFSR0TtpXw4CskAMXBUmYpDfQ=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/popup.js"
+        integrity="sha256-s2qsK8Pc2X9cKCpRTyq+onTYAK1j+nyA7tw8C4lVIFs=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/accordion.min.css"
+        integrity="sha256-UHeBVR0fprbNitzKPhdn/I/0NP+tlqNmcNbPqgluZuM=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/accordion.min.js"
+        integrity="sha256-kt0Dfi+mrxAU+iYsfDrkROHrb55Hi0lVWC7MT46/xnU=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/array-flat-polyfill"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css"
+        integrity="sha256-KyXPF3/VOPPst/NQOzCWr97QMfSfzJLyFT0o5lYJXiQ=" crossorigin="anonymous" />
+
+<body>
+    <div>
+        <div id="topNav" style="margin:0 0 !important">
+
+            <div class="top-link">
+                <a href="http://des.smartsites.com/Maxlite/171219/Reps-Dashboard-v01/">Rep-Resource MaxLite</a>
+                <a href="/Account/Logout?ReturnUrl=/products/mpulse-area-lights">Logout</a>
+                <a href="https://support.maxlite.com" target="_blank">Distributor Support</a>
+                <a href="http://des.smartsites.com/Maxlite/080120/Subpages/Employee-Testimonials/">Careers</a>
+                <a href="http://des.smartsites.com/Maxlite/090120/Distributor/">Become a Distributor</a>
+                <a href="http://des.smartsites.com/Maxlite/080120/Subpages/Datesheet-lib/">Data Sheet Library</a>
+                <a href="http://des.smartsites.com/Maxlite/080120/Subpages/Webinar/" class="last">Webinars</a>
+                <div style="display: inline-block;padding:5px;">
+                    <label style="margin-right:5px">Search</label>
+                    <input id="searchBox" type="text" onkeypress="return doSearch(event);" class="_text">
+                </div>
+            </div>
+
+        </div>
+
+        <div style="z-index:99;width:100%;margin:0;" class=" ui menu">
+            <a class="item" href="products.html?cat=Outdoor">
+                <img style="width:150px;padding:10px" src="assets/images/MaxLiteLogo.png" />
+            </a>
+
+            <a class="ui products item">
+                PRODUCTS
+                <i class="dropdown icon"></i>
+            </a>
+
+
+
+        </div>
+
+
+        <div id="about-nav" class="ui fluid popup transition hidden">
+
+        </div>
+        <div id="products-nav" style="width:980px" class="ui flowing basic popup transition hidden">
+            <div class="ui four column relaxed equal height divided grid">
+                <div class="column">
+                    <h3 style="color:#009639" class="ui header">Outdoor</h4>
+                        <div class="ui link list">
+                            <a href="newprodlist.html?group=4583" class="item">MPulse
+                                Architectural Outdoor Fixtures</a>
+                            <a href="newprodlist.html?group=4533" class="item">Bollards</a>
+                            <a href="newprodlist.html?group=4434" class="item">Area
+                                Luminaires</a>
+                            <a href="newprodlist.html?group=4371" class="item">Flood
+                                Luminaires</a>
+                            <a href="newprodlist.html?group=4340" class="item">Wall
+                                Luminaires</a>
+                            <a href="newprodlist.html?group=1300" class="item">Canopy and Parking
+                                Garage Luminaires</a>
+                            <a href="products.html?cat=Outdoor" class="item"
+                                style="text-decoration:underline;color:#009639">more..</a>
+                        </div>
+                </div>
+                <div class="column">
+                    <h3 style="color:#009639" class="ui header">Indoor</h4>
+                        <div class="ui link list">
+                            <a href="indoorprods.html?group=1500" class="item">Panels
+                                and
+                                Troffers</a>
+                            <a href="indoorprods.html?group=4407" class="item">Retrofit
+                                Kits</a>
+                            <a href="indoorprods.html?group=4418" class="item">High Bays</a>
+                            <a href="indoorprods.html?group=4404" class="item">Downlights</a>
+                            <a href="indoorprods.html?group=4446" class="item">Linear
+                                Fixtures</a>
+                            <a href="indoorprods.html" class="item">Lightbars</a>
+                            <a href="products.html?cat=Indoor" class="item"
+                                style="text-decoration:underline;color:#009639">more..</a>
+                        </div>
+                </div>
+                <div class="column">
+                    <h4 style="color:#009639" class="ui header">Lamps</h4>
+                    <div class="ui link list">
+                        <a class="item">Neutrals</a>
+                        <a class="item">Brights</a>
+                        <a class="item">Pastels</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <h4 style="color:#009639" class="ui header">Residential</h4>
+                    <div class="ui link list">
+                        <a class="item">Knitwear</a>
+                        <a class="item">Outerwear</a>
+                        <a class="item">Pants</a>
+                        <a class="item">Shoes</a>
+                    </div>
+                </div>
+            </div>
+            <!-- row 2 -->
+            <div class="ui four column relaxed equal height divided grid">
+                <div class="column">
+                    <h4 style="color:#009639" class="ui header">Harsh and Hazardous</h4>
+                    <div class="ui link list">
+                        <a class="item">Cashmere</a>
+                        <a class="item">Linen</a>
+                        <a class="item">Cotton</a>
+                        <a class="item">Viscose</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <h4 class="ui header">Horticulture</h4>
+                    <div class="ui link list">
+                        <a class="item">Small</a>
+                        <a class="item">Medium</a>
+                        <a class="item">Large</a>
+                        <a class="item">Plus Sizes</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <h4 style="color:#009639" class="ui header">Light Engines and Retrofit Kits</h4>
+                    <div class="ui link list">
+                        <a class="item">Neutrals</a>
+                        <a class="item">Brights</a>
+                        <a class="item">Pastels</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <h4 style="color:#009639" class="ui header">Signage</h4>
+                    <div class="ui link list">
+                        <a class="item">Knitwear</a>
+                        <a class="item">Outerwear</a>
+                        <a class="item">Pants</a>
+                        <a class="item">Shoes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="width: 1280px;">
+            <div id="prod-accord" style="width:350px;margin:20px 0px 20px 150px;display: inline-block;"
+                class="ui styled accordion">
+            </div>
+            <div style="padding:15px;width:750px;margin-left:25px;float:right;">
+                <div id="prod-group" style="display:inline;margin: 10px 0 10px 0">
+
+                </div>
+                <div id="prod-results" class="ui three column relaxed equal height grid">
+
+                </div>
+            </div>
+
+        </div>
+        <script type="text/javascript">
+
+
+            $('.ui.dropdown').dropdown();
+
+            $('.products').popup({
+                popup: $('#products-nav'),
+
+                lastResort: 'bottom left',
+                hoverable: true,
+
+                position: 'bottom left',
+                delay: {
+                    show: 200,
+                    hide: 100
+                }
+            });
+
+
+
+            // $('.menu .products-drop').dropdown();
+
+            $('.about').dropdown({
+                on: 'hover'
+            });
+
+            $('.ui.styled.accordion')
+                .accordion({
+                    exclusive: true
+                })
+                ;
+
+
+        </script>
+        <script>
+            prods = JSON.parse(main_json)
+            console.log('prod: ', prods)
+            var mf = new MainFilter(prods)
+            mf.renderFilters()
+
+            $('.ui.checkbox')
+                .checkbox()
+                ;
+
+            var urlParams = new URLSearchParams(window.location.search)
+            if (urlParams) {
+                if (urlParams) {
+                    if (urlParams.has('cat')) {
+                        id = urlParams.get("cat")
+
+                        catId = id;
+                    }
+
+                }
+            }
+            checker = $(`#${catId}-checks`)
+            console.log('checker', checker)
+
+            inp = checker.find(`#0-${catId}`)
+            console.log('inpout', inp)
+            inp.prop('checked', true)
+            inp.change()
+        </script>
+</body>
+
+</html>

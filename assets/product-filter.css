@@ -1,0 +1,56 @@
+#filter-container {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 14px !important;
+}
+
+#products-container {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 14px !important;
+}
+
+.down-caret {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: rgb(51, 51, 51) transparent transparent transparent;
+  display: inline-block;
+  margin-top: 6px;
+  margin-left: 6px;
+  top: -3px;
+  position: relative;
+  transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transition: all 0.25s ease-in;
+  cursor: pointer;
+}
+
+.open-caret {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: rgb(51, 51, 51) transparent transparent transparent;
+  display: inline-block;
+  margin-top: 6px;
+  margin-left: 6px;
+  top: -3px;
+  position: relative;
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transition: all 0.25s ease-out;
+  cursor: pointer;
+}
+
+.filter-bar {
+  padding: 10px;
+  color: rgb(51, 51, 51);
+  background: rgb(231, 231, 231);
+  border-radius: 3px;
+  border: 1px solid #c7c7c7;
+  font-weight: bold;
+  width: 90%;
+  margin: 7px;
+}
